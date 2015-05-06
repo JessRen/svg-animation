@@ -3,105 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SVG Animation</title>
-	<style>
 
-		body{
-			padding: 0;
-		}
-		.container{
-			position: relative;
-			width: 600px;
-			height: 400px;
-			background: #0096D5;
-			background-image: linear-gradient(0deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-		}
-
-		#rocket {
-			-webkit-animation: popup 1s ease infinite;
-		}
-		#rocketfire{
-			-webkit-animation: shake .2s linear infinite;
-		}
-
-		#cloud1{
-			-webkit-animation: fall 1s linear infinite;
-		}
-
-		#cloud2{
-			-webkit-animation: fall-2 1s linear infinite;
-		}
-
-		#cloud3{
-			-webkit-animation: fall-3 2s linear infinite;
-		}
-		#cloud4{
-			-webkit-animation: fall-4 3s linear infinite;
-		}
-
-
-
-		@-webkit-keyframes popup {
-			0% {
-				transform: translate(260px,200px);
-			}
-			50% {
-				transform: translate(260px,240px);
-			}
-			100% {
-				transform: translate(260px,200px);
-			}
-
-		}
-
-		@-webkit-keyframes fall {
-			from{
-				transform: translateY(-100px);
-			}
-			to {
-				transform: translateY(1000px)
-			}
-		}
-
-		@-webkit-keyframes fall-2 {
-			from{
-				transform: translate(200px,-200px);
-			}
-			to {
-				transform: translate(200px,800px)
-			}
-		}
-
-		@-webkit-keyframes fall-3 {
-			from{
-				transform: translate(400px,-400px);
-			}
-			to {
-				transform: translate(400px,1000px)
-			}
-		}
-
-		@-webkit-keyframes fall-4 {
-			from{
-				transform: translate(500px,-400px);
-			}
-			to {
-				transform: translate(500px,1000px)
-			}
-		}
-
-		@-webkit-keyframes shake { 
-			0% 		{ -webkit-transform: translate(55px, 135px) rotate(7deg); }
-			20% 	{ -webkit-transform: translate(55px, 135px) rotate(0deg); }
-			40% 	{ -webkit-transform: translate(55px, 135px) rotate(-7deg); }
-			60% 	{ -webkit-transform: translate(55px, 135px) rotate(0deg); }
-			100% 	{ -webkit-transform: translate(55px, 135px) rotate(0deg); }
-		}
-	</style>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+	<header class="demo-header cf">
+		<h1>SVG Animation</h1>
+		<a href="">Go to the Article</a>
+	</header>
+
 	<div class="container">
-		<svg width="600" height="400" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+
+		<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
 			<path id="cloud1" d="M-24.205 89.653c-.048-.858-.072-1.723-.072-2.593 0-25.167 20.438-45.568 45.65-45.568 7.987 0 15.495 2.047 22.026 5.645C49.733 20.12 74.025 0 103.024 0c30.752 0 56.21 22.625 60.577 52.108 1.56-.16 3.143-.243 4.745-.243 25.21 0 45.65 20.4 45.65 45.568C214 122.6 193.56 143 168.35 143H-24.278C-39.038 143-51 131.058-51 116.326c0-14.73 11.964-26.673 26.723-26.673h.072z" opacity=".4" fill="#FFF" fill-rule="evenodd"/>
 		    
 			<path id="cloud2" d="M128.42 62.694c.033-.6.05-1.205.05-1.813 0-17.596-14.293-31.862-31.924-31.862-5.585 0-10.835 1.43-15.402 3.947C76.712 14.07 59.724 0 39.446 0 17.942 0 .14 15.822-2.916 36.44c-1.09-.113-2.197-.17-3.317-.17-17.63 0-31.924 14.266-31.924 31.865C-38.157 85.733-23.864 100-6.233 100H128.47c10.32 0 18.687-8.35 18.687-18.653 0-10.302-8.366-18.653-18.687-18.653h-.05z" opacity=".3" fill="#FFF" fill-rule="evenodd"/>
